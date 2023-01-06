@@ -50,9 +50,9 @@ const prizes = [
   {
     type: 1,
     count: 1,
-    text: "一等奖 ",
-    title: "价值5999元",
-    img: "./img/huawei.png",
+    text: "特等奖 ",
+    title: "AirPods 3",
+    img: "./img/AirPods3.png",
     enter: "1st-lottery",//抽奖进行时音乐
     awards: "1st-BJ-BGM",//颁奖音乐
     ROTATE_TIME: 20000,
@@ -61,10 +61,10 @@ const prizes = [
   },
   {
     type: 2,
-    count: 2,
-    text: "二等奖 ",
-    title: "价值3799元",
-    img: "./img/mbp.jpg",
+    count: 3,
+    text: "一等奖 ",
+    title: "艾尔菲德胶囊咖啡机/凤凰20寸折叠自行车/徕芬吹风机",
+    img: "./img/kfj.jpg",
     enter: "other-lottery",//抽奖进行时音乐
     awards: "other-BJ-BGM",//颁奖音乐
     ROTATE_TIME: 20000,
@@ -72,9 +72,9 @@ const prizes = [
   },
   {
     type: 3,
-    count: 5,
-    text: "三等奖  ",
-    title: "价值1200元",
+    count: 6,
+    text: "二等奖  ",
+    title: "小熊电热饭盒/荣耀手环5/PENINI手冲咖啡套装",
     img: "./img/ipad.jpg",
     enter: "other-lottery",//抽奖进行时音乐
     awards: "other-BJ-BGM",//颁奖音乐
@@ -83,16 +83,26 @@ const prizes = [
   },
   {
     type: 4,
-    count: 10,
+    count: 8,
+    text: "三等奖",
+    title: "世界杯吉祥物公仔摆件3D",
+    img: "./img/edifier.jpg",
+    enter: "other-lottery",//抽奖进行时音乐
+    awards: "other-BJ-BGM",//颁奖音乐
+    ROTATE_TIME: 10000,
+    circle: 8 * 1
+  },
+  {
+    type: 5,
+    count: 15,
     text: "四等奖",
-    title: "价值300-600元不等",
+    title: "四等奖奖品",
     img: "./img/edifier.jpg",
     enter: "other-lottery",//抽奖进行时音乐
     awards: "other-BJ-BGM",//颁奖音乐
     ROTATE_TIME: 10000,
     circle: 8 * 1
   }
-
 ];
 let luckyData = JSON.parse(localStorage.getItem("luckyData")) || {};
 
@@ -134,5 +144,5 @@ const height = window.innerWidth * .75 * .75
 /**
  * 一次抽取的奖品个数与prizes对应
  */
-const EACH_COUNT = [1, 1, 1, 5, 5];
+const EACH_COUNT = [1, 1, 1, 1, 1,1];
 export default { EACH_COUNT, prizes, COMPANY, user, luckyData, leftUsers, awardList, excludeUser, atmosphereGroupCard, background, setSecret, width, height, bgVideo }
